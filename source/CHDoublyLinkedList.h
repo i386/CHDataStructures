@@ -46,9 +46,9 @@ typedef struct CHDoublyLinkedListNode {
  */
 @interface CHDoublyLinkedList : NSObject <CHLinkedList>
 {
-	__strong CHDoublyLinkedListNode *head; // Dummy node at the front of the list.
-	__strong CHDoublyLinkedListNode *tail; // Dummy node at the back of the list.
-	__strong CHDoublyLinkedListNode *cachedNode; // Pointer to last accessed node.
+    CHDoublyLinkedListNode *head; // Dummy node at the front of the list.
+    CHDoublyLinkedListNode *tail; // Dummy node at the back of the list.
+    CHDoublyLinkedListNode *cachedNode; // Pointer to last accessed node.
 	NSUInteger cachedIndex; // Index of last accessed node.
 	NSUInteger count; // The number of objects currently in the list.
 	unsigned long mutations; // Tracks mutations for NSFastEnumeration.
